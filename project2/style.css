@@ -1,0 +1,185 @@
+/* Reset & Basic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #121212;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #000;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #0ff;
+  border-bottom: 2px solid #0ff;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 140px 0 80px; /* padding top + header height */
+  gap: 40px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #0ff;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+  color: #fff;
+}
+
+.hero-text h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  color: #ddd;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-right: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn.primary {
+  background: #0ff;
+  color: #000;
+}
+
+.btn.primary:hover {
+  background: #0cc;
+}
+
+.btn.outline {
+  border: 2px solid #0ff;
+  color: #0ff;
+  background: transparent;
+}
+
+.btn.outline:hover {
+  background: #0ff;
+  color: #000;
+}
+
+.hero-image img {
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff88a88;
+}
+
+/* Sections Style */
+section {
+  padding: 80px 0;
+  background: #181818;
+  border-top: 1px solid #333;
+}
+
+section:nth-of-type(even) {
+  background: #121212;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0ff;
+  text-align: center;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #ddd;
+  text-align: center;
+}
+
+.email-link {
+  color: #0ff;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image img {
+    max-width: 250px;
+    margin-top: 20px;
+  }
+  nav ul {
+    gap: 15px;
+  }
+}
